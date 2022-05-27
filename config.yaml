@@ -1,0 +1,20 @@
+auth:
+  registry.cn-hangzhou.aliyuncs.com:
+    username: USERNAME
+    password: PASSWORD
+images:
+  # K8s images
+  k8s.gcr.io/kube-apiserver: registry.cn-hangzhou.aliyuncs.com/k8sync/kube-apiserver
+  k8s.gcr.io/kube-controller-manager: registry.cn-hangzhou.aliyuncs.com/k8sync/kube-controller-manager
+  k8s.gcr.io/kube-scheduler: registry.cn-hangzhou.aliyuncs.com/k8sync/kube-scheduler
+  k8s.gcr.io/kube-proxy: registry.cn-hangzhou.aliyuncs.com/k8sync/kube-proxy
+  k8s.gcr.io/pause: registry.cn-hangzhou.aliyuncs.com/k8sync/pause
+  k8s.gcr.io/etcd: registry.cn-hangzhou.aliyuncs.com/k8sync/etcd
+  k8s.gcr.io/coredns: registry.cn-hangzhou.aliyuncs.com/k8sync/coredns
+
+  # nginx ingress
+  k8s.gcr.io/ingress-nginx/controller: registry.cn-hangzhou.aliyuncs.com/k8sync/ingress-nginx-controller
+  k8s.gcr.io/ingress-nginx/kube-webhook-certgen: registry.cn-hangzhou.aliyuncs.com/k8sync/ingress-nginx-kube-webhook-certgen
+
+  # nfs storageclass
+  k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner: registry.cn-hangzhou.aliyuncs.com/k8sync/nfs-subdir-external-provisioner
